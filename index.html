@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- pastabos, kurios nepatenka į kodą -->
+<html lang="lt-LT">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>My profile</title>
+
+<head>
+     <style>
+        .a {
+            background-color: greenyellow;
+        }
+
+        .b {
+            background-color: blue;
+        }
+
+        .c {
+            background-color: red;
+        }
+
+        .d {
+            background-color: grey;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            /* center items vertically, in this case */
+            align-items: center;
+            /* center items horizontally, in this case */
+        }
+
+        .container>* {
+            text-align: center;
+        }
+
+        .big-container {
+            width: 250px;
+            height: 500px;
+            align-items: center;
+        }
+
+        .textwrap {
+            word-wrap: normal;
+        }
+
+        .content-container {
+            width: 150px;
+            height: 150px;
+            padding: 50px;
+            gap: 2px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+        }
+
+        .flex-gap>div {
+            margin: 50px;
+        }
+
+        .content-container::after {
+            content: "";
+            flex-basis: 150px;
+            padding: 50px;
+            gap: 20px;
+        }
+
+        .imgwrap {
+            width: 80%;
+            /*or whatever you choose*/
+            margin: auto;
+            filter: invert(1);
+        }
+
+        .imgwrap img {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            /*actual image width*/
+            height: auto;
+            /* maintain aspect ratio*/
+            margin: auto;
+            /*optional centering of image*/
+        }
+
+        .circle1 {
+            width: 75px;
+            height: 75px;
+            line-height: 75px;
+            border-radius: 50%;
+            border: solid 5px greenyellow;
+            background-color: white;
+            color: greenyellow;
+            text-align: center;
+            display: block;
+            margin-top: -210px;
+            margin-left: -95px;
+        }
+
+        .circle2 {
+            width: 75px;
+            height: 75px;
+            line-height: 75px;
+            border-radius: 50%;
+            border: solid 5px blue;
+            background-color: white;
+            color: blue;
+            text-align: center;
+            display: block;
+            margin-top: -190px;
+            margin-left: -95px;
+        }
+
+        .circle3 {
+            width: 75px;
+            height: 75px;
+            line-height: 75px;
+            border-radius: 50%;
+            border: solid 5px red;
+            background-color: white;
+            color: red;
+            text-align: center;
+            display: block;
+            margin-top: -210px;
+            margin-left: -95px;
+        }
+
+        .circle4 {
+            width: 75px;
+            height: 75px;
+            line-height: 75px;
+            border-radius: 50%;
+            border: solid 5px grey;
+            background-color: white;
+            color: grey;
+            text-align: center;
+            display: block;
+            margin-top: -200px;
+            margin-left: -95px;
+        }
+
+        @media screen and (max-width:700px) {
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    </style>
+
+<body>
+    <section class="container flex-gap">
+        <div class="big-container">
+            <div class="a content-container">
+                <div class="imgwrap">
+                    <img src="university-solid.svg" justify="center" alt="Inception" title="Inception">
+                </div>
+                <h2 class="circle1">1</h2>
+            </div>
+            <div class="textwrap">
+                <h1>CLIENT<br> KICKOFF</h1>
+                <p>The client project kickoff meeting is an opportunity to hear from the client and their project team,
+                    as
+                    well as other key stakeholders, about the project and get a broader understanding of the project
+                    background and business drivers that led to the project being initiated, review the project brief,
+                    and
+                    discuss how to ...</p>
+
+            </div>
+        </div>
+        <div class="big-container">
+            <div class="b content-container">
+                <div class="imgwrap">
+                    <img src="users-solid.svg" justify="center" alt="Inception" title="Inception">
+                </div>
+                <h2 class="circle2">2</h2>
+            </div>
+            <div class="textwrap">
+                <h1>MESSAGING<br> DEVELOPMENT</h1>
+                <p>The client project kickoff meeting is an opportunity to hear from the client and their project team,
+                    as
+                    well as other key stakeholders, about the project and get a broader understanding of the project
+                    background and business drivers that led to the project being initiated, review the project brief,
+                    and
+                    discuss how to ...</p>
+            </div>
+
+        </div>
+        <div class="big-container">
+            <div class="c content-container">
+                <div class="imgwrap">
+                    <img src="random-solid.svg" justify="center" alt="Inception" title="Inception">
+                </div>
+                <h2 class="circle3">3</h2>
+            </div>
+            <div class="textwrap">
+                <h1>CAMPAIGN<br> STRATEGY</h1>
+                <p>The client project kickoff meeting is an opportunity to hear from the client and their project team,
+                    as
+                    well as other key stakeholders, about the project and get a broader understanding of the project
+                    background and business drivers that led to the project being initiated, review the project brief,
+                    and
+                    discuss how to ...</p>
+            </div>
+        </div>
+
+        <div class="big-container">
+            <div class="d content-container">
+                <div class="imgwrap">
+                    <img src="cc-apple-pay-brands.svg" justify="center" alt="Inception" title="Inception">
+                </div>
+                <h2 class="circle4">4</h2>
+            </div>
+            <div class="textwrap">
+                <h1>SALES<br> KICKOFF</h1>
+                <p>The client project kickoff meeting is an opportunity to hear from the client and their project team,
+                    as
+                    well as other key stakeholders, about the project and get a broader understanding of the project
+                    background and business drivers that led to the project being initiated, review the project brief,
+                    and
+                    discuss how to ...</p>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</head>
